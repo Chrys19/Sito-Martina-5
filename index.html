@@ -56,8 +56,15 @@
       font-style: italic;
       color: #4b5563;
     }
-      @keyframes scroll-x {
-      0% { transform: translateX(0); }
+      
+@keyframes bounce-up {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -6px); }
+}
+
+.animate-bounce-up {
+  animation: bounce-up 2s infinite;
+}
       100% { transform: translateX(-50%); }
     }
     .animate-scroll-x {
@@ -302,7 +309,8 @@
 <footer class="text-center text-sm text-gray-500 py-8 border-t bg-white bg-opacity-80 flex flex-col items-center space-y-2">
   <img src="logo-header.jpeg" alt="Logo Martina Rocchetti" class="h-10 w-auto mb-2">
       © 2025 Martina Rocchetti · Psicologa · Tutti i diritti riservati
-    </footer>
+    <a href="#" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 bg-pink-600 text-white px-4 py-2 rounded-full shadow hover:bg-pink-700 transition animate-bounce-up">↑ Torna su</a>
+</footer>
   </div>
   <script>
 function closeMobileMenuOnLinkClick() {
