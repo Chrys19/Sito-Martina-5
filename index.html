@@ -65,7 +65,7 @@
       <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
           <img src="logo-header.jpeg" alt="Logo Martina Rocchetti" class="h-10 w-auto" loading="lazy">
-          <h1 class="text-xl font-bold text-pink-700">Martina Rocchetti</h1>
+          <h1 class="text-xl font-bold text-pink-700">Dott.ssa Martina Rocchetti</h1>
         </div>
         <button class="md:hidden text-pink-700 focus:outline-none" onclick="toggleMobileMenu()">☰</button>
         <nav class="hidden md:flex space-x-6 text-sm font-medium transition-all duration-300">
@@ -95,7 +95,7 @@
 
     <a href="#form-contatto" class="sticky-button">Prenota ora</a>
     <section id="chi-sono" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center" data-animate>
-  <img src="foto.jpg" alt="Martina Rocchetti" class="w-full md:w-1/3 rounded-xl shadow" loading="lazy">
+  <img src="foto.jpg" alt="Martina Rocchetti" class="w-full md:w-1/4 rounded-xl shadow" loading="lazy">
   <div>
     <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Chi sono</h2>
     <p class="text-base leading-relaxed mb-4">
@@ -111,7 +111,7 @@
 </section>
 
 <section id="cosa-faccio" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center" data-animate>
-  <img src="illustrazione.png" alt="Illustrazione Cosa faccio" class="w-full md:w-1/3 rounded-xl shadow">
+  <img src="illustrazione.png" alt="Illustrazione Cosa faccio" class="w-full md:w-1/4 rounded-xl shadow">
   <div>
     <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Cosa faccio</h2>
     <p class="text-base leading-relaxed mb-4"><strong><strong>
@@ -128,7 +128,7 @@
 </section>
 
 <section id="come-aiuto" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center" data-animate>
-  <img src="ChatGPT Image 23 apr 2025, 10_55_57.png" alt="Supporto emotivo" class="w-full md:w-1/3 rounded-xl shadow" loading="lazy">
+  <img src="ChatGPT Image 23 apr 2025, 10_55_57.png" alt="Supporto emotivo" class="w-full md:w-1/4 rounded-xl shadow" loading="lazy">
   <div>
     <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Come posso aiutarti</h2>
   <p class="text-base leading-relaxed mb-4"><strong><strong>
@@ -155,7 +155,7 @@
 </section>
 
 <section id="approccio" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center" data-animate>
-  <img src="ChatGPT Image 23 apr 2025, 10_56_17.png" alt="Approccio terapeutico" class="w-full md:w-1/3 rounded-xl shadow" loading="lazy">
+  <img src="ChatGPT Image 23 apr 2025, 10_56_17.png" alt="Approccio terapeutico" class="w-full md:w-1/4 rounded-xl shadow" loading="lazy">
   <div>
     <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Qual è il mio approccio</h2>
   <p class="text-base leading-relaxed mb-4">
@@ -184,30 +184,51 @@
   </strong></p>
 </section>
 
-    <section id="form-contatto" class="bg-white rounded-2xl shadow-md px-6 py-10 my-10 max-w-3xl mx-auto" data-animate>
-      <h2 class="text-2xl font-semibold text-pink-800 mb-6">Scrivimi un messaggio</h2>
-      <form id="contatto-form" action="#" method="POST" class="space-y-4">
-        <div>
-          <label for="nome" class="block mb-1 font-medium">Nome</label>
-          <input type="text" id="nome" name="nome" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+    
+        <div class="text-center mt-6">
+          <a href="https://www.miodottore.it/martina-rocchetti/psicologo/roma" target="_blank" class="inline-block text-pink-600 font-semibold underline hover:text-pink-800 transition">Prenota una visita su MioDottore</a>
         </div>
-        <div>
-          <label for="email" class="block mb-1 font-medium">Email</label>
-          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
-        </div>
-        <div>
-          <label for="messaggio" class="block mb-1 font-medium">Messaggio</label>
-          <textarea id="messaggio" name="messaggio" rows="5" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
-        </div>
-        <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-2 rounded-full shadow-md">Invia</button>
-        <p id="form-success" class="hidden text-green-600 font-medium mt-4 flex items-center">
-  <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-  </svg>
-  Grazie per il tuo messaggio! Ti risponderò il prima possibile.
-</p>
-      </form>
     </section>
+
+<section id="recensioni" class="bg-gradient-to-br from-pink-50 to-white rounded-2xl shadow-md px-6 py-10 my-10 max-w-5xl mx-auto text-center" data-animate>
+  <h2 class="text-3xl font-semibold text-pink-800 mb-10">Recensioni</h2>
+  <div class="grid md:grid-cols-3 gap-6 text-left">
+    <div class="bg-white p-6 rounded-xl shadow-md border border-pink-100">
+      <p class="text-lg italic text-gray-700 mb-4">“Consiglio vivamente la dottoressa Rocchetti, mi sono trovata benissimo! È stata molto professionale e mi sono sentita subito capita, grazie!”</p>
+      <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md border border-pink-100">
+      <p class="text-lg italic text-gray-700 mb-4">“Dottoressa giovane ma molto preparata e professionale. Ho iniziato da poco il mio percorso con lei ma già sto riscontrando i primi benefici. Ve la consiglio vivamente.”</p>
+      <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md border border-pink-100">
+      <p class="text-lg italic text-gray-700 mb-4">“Mio figlio si sta trovando benissimo con la dottoressa, è una persona molto competente, disponibile, gentile ed empatica.”</p>
+      <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+    </div>
+  </div>
+</section>
+
+<section id="form-contatto" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-3xl mx-auto" data-animate>
+  <h2 class="text-2xl font-semibold text-pink-800 mb-6 text-center">Scrivimi un messaggio</h2>
+  <form id="contatto-form" class="space-y-4">
+    <div>
+      <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+      <input type="text" id="nome" name="nome" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+    </div>
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+    </div>
+    <div>
+      <label for="messaggio" class="block text-sm font-medium text-gray-700">Messaggio</label>
+      <textarea id="messaggio" name="messaggio" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"></textarea>
+    </div>
+    <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded-full shadow hover:bg-pink-700">Invia</button>
+  </form>
+  <div class="text-center mt-6">
+    <a href="https://www.miodottore.it/martina-rocchetti/psicologo/roma" target="_blank" class="inline-block text-pink-600 font-semibold underline hover:text-pink-800 transition">Prenota una visita su MioDottore</a>
+  </div>
+</section>
 
 <!-- Pagina di ringraziamento -->
 <section id="grazie" class="bg-green-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-3xl mx-auto hidden">
@@ -246,7 +267,15 @@
     </footer>
   </div>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
+function closeMobileMenuOnLinkClick() {
+  const links = document.querySelectorAll('#mobile-menu a');
+  links.forEach(link => link.addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.add('hidden');
+    document.body.style.overflow = '';
+  }));
+}
+document.addEventListener("DOMContentLoaded", () => {
+  closeMobileMenuOnLinkClick();
       document.querySelectorAll("[data-animate]").forEach(el => {
         el.classList.add("opacity-0", "translate-y-4");
         const observer = new IntersectionObserver(entries => {
