@@ -63,13 +63,40 @@
     .animate-scroll-x {
       animation: scroll-x 40s linear infinite;
     }
+  html.dark body {
+    background-color: #1f2937;
+    color: #e5e7eb;
+  }
+  html.dark .bg-white {
+    background-color: #2d3748;
+  }
+  html.dark .text-pink-800 {
+    color: #fbb6ce;
+  }
+  html.dark .text-gray-700, html.dark .text-gray-500, html.dark .text-gray-800 {
+    color: #d1d5db;
+  }
+  html.dark .bg-pink-50 {
+    background-color: #2a2f3a;
+  }
+  html.dark .bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #1f2937, #2a2f3a);
+  }
+  html.dark .shadow-md {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
+  }
+  
 </style>
+
 </head>
 <body class="text-gray-800">
   <div class="overlay">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+<div class="absolute top-4 right-4 z-50">
+  <button onclick="document.documentElement.classList.toggle('dark')" class="text-xs font-medium bg-gray-200 dark:bg-gray-700 dark:text-white px-3 py-1 rounded-full shadow">Ψ</button>
+</div>
+      <div class="sticky top-0 z-50 bg-white dark:bg-gray-800 max-w-6xl mx-auto px-4 py-4 flex justify-between items-center shadow">
         <div class="flex items-center space-x-2">
           <img src="logo-header.jpeg" alt="Logo Martina Rocchetti" class="h-10 w-auto" loading="lazy">
           <h1 class="text-xl font-bold text-pink-700">Dott.ssa Martina Rocchetti</h1>
@@ -183,7 +210,7 @@
 </p>
 </section>
 
-<section id="articoli" class="max-w-4xl mx-auto px-4 py-10" data-animate>
+<section id="articoli" class="max-w-4xl mx-auto px-4 py-10 bg-white dark:bg-gray-800" data-animate>
   <h2 class="text-2xl font-semibold text-pink-800 mb-6">I miei articoli</h2>
   <p class="text-base leading-relaxed mb-4"><strong><strong>
     In questa sezione troverai riflessioni e strumenti su temi che mi stanno a cuore, come la mindfulness, la gestione dell’ansia, il benessere emotivo, le difficoltà scolastiche e molto altro.
@@ -193,7 +220,7 @@
   </strong></p>
 </section>
 
-    
+    
         <div class="text-center mt-6">
   <a href="https://www.miodottore.it/martina-rocchetti/psicologo/roma" target="_blank" class="inline-block text-pink-600 font-semibold underline hover:text-pink-800 transition">Il mio profilo su MioDottore</a>
 </div>
@@ -219,7 +246,7 @@
 
 <section id="form-contatto" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-3xl mx-auto" data-animate>
   <h2 class="text-2xl font-semibold text-pink-800 mb-6 text-center">Scrivimi un messaggio</h2>
-  <form id="contatto-form" class="space-y-4">
+  <form id="contatto-form" class="space-y-4" action="https://formspree.io/f/mnqegjrz" method="POST">
     <div>
       <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
       <input type="text" id="nome" name="nome" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
@@ -231,6 +258,7 @@
     <div>
       <label for="messaggio" class="block text-sm font-medium text-gray-700">Messaggio</label>
       <textarea id="messaggio" name="messaggio" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"></textarea>
+    <input type="hidden" name="_subject" value="Nuovo messaggio dal sito di Martina Rocchetti">
     </div>
     <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded-full shadow hover:bg-pink-700">Invia</button>
   </form>
