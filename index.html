@@ -404,7 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   </script>
 <script>
-  function toggleMobileMenu() {
+function toggleMobileMenu() {
   const menu = document.getElementById('mobile-menu');
   if (menu.classList.contains('hidden')) {
     menu.classList.remove('hidden');
@@ -415,11 +415,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => menu.classList.add('hidden'), 300);
     document.body.style.overflow = '';
   }
-} else {
-      menu.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-  }
+}
 </script>
 </body>
 </html>
+
