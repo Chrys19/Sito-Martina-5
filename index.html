@@ -401,14 +401,19 @@ function toggleMobileMenu() {
   const menu = document.getElementById('mobile-menu');
   if (menu.classList.contains('hidden')) {
     menu.classList.remove('hidden');
-    setTimeout(() => menu.style.opacity = '1', 10);
+    menu.classList.add('block');
+    menu.style.opacity = '1';
     document.body.style.overflow = 'hidden';
   } else {
     menu.style.opacity = '0';
-    setTimeout(() => menu.classList.add('hidden'), 300);
+    setTimeout(() => {
+      menu.classList.add('hidden');
+      menu.classList.remove('block');
+    }, 300);
     document.body.style.overflow = '';
   }
 }
 </script>
 </body>
 </html>
+
