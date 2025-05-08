@@ -128,7 +128,6 @@
   <a href="#form-contatto" class="block text-pink-700">Contatti</a>
   <a href="#dove-ricevo" class="block text-pink-700">Dove ricevo</a>
 </nav>
-    </header>
 
     <div class="quote-hero">
   <blockquote class="max-w-xl mx-auto text-lg md:text-xl font-serif italic text-pink-700">
@@ -179,7 +178,7 @@
 <section id="come-aiuto" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center" data-animate>
   <img src="ChatGPT Image 8 mag 2025, 10_02_01.png" alt="Supporto emotivo" class="w-full md:w-1/4 rounded-xl shadow" loading="lazy">
   <div>
-    <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">In cosa posso aiutarti</h2>
+    <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Come posso aiutarti</h2>
     <p class="text-base leading-relaxed mb-4">
       Ci sono momenti in cui <strong>le emozioni si fanno confuse</strong>, i pensieri si affollano e non si riesce più a vedere con chiarezza la direzione da prendere. In questi momenti, <strong>avere uno spazio di ascolto, confronto e sostegno</strong> può fare la differenza.
     </p>
@@ -235,7 +234,7 @@
     </div>
     <!-- Box 2 -->
     <div class="bg-pink-50 p-6 rounded-xl shadow-md border border-pink-100 overflow-hidden">
-      <div class="flex space-x-6 scroll-recensioni overflow-x-auto scroll-smooth snap-x snap-mandatory">
+     <div class="flex space-x-6 scroll-recensioni overflow-x-auto scroll-smooth snap-x snap-mandatory">
         <div class="min-w-full snap-start">
           <p class="text-lg italic text-gray-700 mb-4">“Mio figlio si sta trovando benissimo con la dottoressa, è una persona molto competente, disponibile, gentile ed empatica.”</p>
           <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
@@ -319,10 +318,6 @@
     <a href="#" class="mt-4 inline-block text-pink-600 hover:underline">Torna alla home</a>
   </div>
 </section>
-</section>
-
-
-
 
 
 <footer class="text-center text-sm text-gray-500 py-8 border-t bg-white bg-opacity-80 flex flex-col items-center space-y-2">
@@ -341,9 +336,8 @@ function closeMobileMenuOnLinkClick() {
     document.body.style.overflow = '';
   }));
 }
-document.addEventListener("DOMContentLoaded", closeMobileMenuOnLinkClick);
-</script>
-  </script>
+    </script>
+    
 <script>
 function toggleMobileMenu() {
   const menu = document.getElementById('mobile-menu');
@@ -362,5 +356,60 @@ function toggleMobileMenu() {
   }
 }
 </script>
+    <script>
+const scrollers = document.querySelectorAll(".scroll-recensioni");
+scrollers.forEach((scroller, index) => {
+  let forward = true;
+  setTimeout(() => {
+    setInterval(() => {
+      scroller.scrollTo({
+        left: forward ? scroller.scrollWidth : 0,
+        behavior: "smooth"
+      });
+      forward = !forward;
+    }, 6000 + index * 1000); // ogni box inizia in momenti sfalsati
+  }, index * 3000);
+});
+</script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contatto-form");
+  const success = document.getElementById("form-success");
+
+  if (form) {
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const button = form.querySelector("button[type='submit']");
+      button.disabled = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.classList.add("hidden");
+          success.classList.remove("hidden");
+          form.reset();
+        } else {
+          alert("Si è verificato un errore durante l'invio. Riprova.");
+        }
+      } catch (error) {
+        console.error("Errore durante l'invio del modulo:", error);
+        alert("Errore di connessione. Riprova più tardi.");
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+});
+</script>
+
 </body>
 </html>
