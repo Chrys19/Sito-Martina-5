@@ -264,11 +264,11 @@
   <p class="text-base leading-relaxed mb-4">
     Ricevo a Roma in tre studi accoglienti, tutti in zona Tuscolana e facilmente raggiungibili con la metro A:
   </p>
-  <ul class="space-y-4 text-base leading-relaxed">
-    <li><strong>🏠 Studio Beyond – Via Vestricio Spurinna 147, Roma</strong><br>📍 Zona Numidio Quadrato – Metro A</li>
-    <li><strong>🏢 Studio AB – Via Sestio Calvino 141, Roma</strong><br>📍 Zona Subaugusta – Metro A</li>
-    <li><strong>🏥 Studio Medico Dott. Cicala – Via Tuscolana 922, Roma</strong><br>📍 Zona Numidio Quadrato – Metro A</li>
-  </ul>
+ <ul class="space-y-4 text-base leading-relaxed">
+  <li><strong>🏠 Studio Beyond – <span class="no-underline text-inherit">Via Vestricio Spurinna 147, Roma</span></strong><br>📍 Zona Numidio Quadrato – Metro A</li>
+  <li><strong>🏢 Studio AB – <span class="no-underline text-inherit">Via Sestio Calvino 141, Roma</span></strong><br>📍 Zona Subaugusta – Metro A</li>
+  <li><strong>🏥 Studio Medico Dott. Cicala – <span class="no-underline text-inherit">Via Tuscolana 922, Roma</span></strong><br>📍 Zona Numidio Quadrato – Metro A</li>
+</ul>
   <div class="mt-8 space-y-6">
     <iframe class="w-full h-64 rounded-xl shadow-md" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.3904987337815!2d12.570512315314003!3d41.85860317922107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61f3a3e55f47%3A0x48adf7f12ea2ad7!2sVia%20Vestricio%20Spurinna%2C%20147%2C%2000181%20Roma%20RM!5e0!3m2!1sit!2sit!4v1713980100000!5m2!1sit!2sit"></iframe>
@@ -375,13 +375,13 @@ scrollers.forEach((scroller, index) => {
 });
 </script>
     <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contatto-form");
-  const success = document.getElementById("form-success");
-  document.addEventListener("DOMContentLoaded", () => {
+       document.addEventListener("DOMContentLoaded", () => {
   // ...altre funzioni...
   closeMobileMenuOnLinkClick(); // << questa chiamata è fondamentale
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contatto-form");
+  const success = document.getElementById("form-success");
 
   if (form) {
     form.addEventListener("submit", async function(e) {
