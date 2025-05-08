@@ -329,13 +329,16 @@
   <script>
 function closeMobileMenuOnLinkClick() {
   const links = document.querySelectorAll('#mobile-menu a');
-  links.forEach(link => link.addEventListener('click', () => {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.add('hidden');
-    menu.classList.remove('fixed', 'top-[72px]', 'left-0', 'w-full', 'bg-white', 'z-40', 'px-4', 'pb-4');
-    document.body.style.overflow = '';
-  }));
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.add('hidden');
+      menu.classList.remove('block');
+      document.body.style.overflow = '';
+    });
+  });
 }
+
     </script>
     
 <script>
@@ -367,7 +370,7 @@ scrollers.forEach((scroller, index) => {
         behavior: "smooth"
       });
       forward = !forward;
-    }, 6000 + index * 1000); // ogni box inizia in momenti sfalsati
+    }, 5000 + index * 1000); // ogni box inizia in momenti sfalsati
   }, index * 3000);
 });
 </script>
@@ -375,6 +378,10 @@ scrollers.forEach((scroller, index) => {
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contatto-form");
   const success = document.getElementById("form-success");
+  document.addEventListener("DOMContentLoaded", () => {
+  // ...altre funzioni...
+  closeMobileMenuOnLinkClick(); // << questa chiamata è fondamentale
+});
 
   if (form) {
     form.addEventListener("submit", async function(e) {
