@@ -400,10 +400,12 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
 
-        if (response.ok) {
-          form.classList.add("hidden");
-          success.classList.remove("hidden");
-          form.reset();
+       if (response.ok) {
+  form.classList.add("hidden");
+  success.classList.remove("hidden");
+  form.reset();
+  success.scrollIntoView({ behavior: "smooth" });
+}
         } else {
           alert("Si è verificato un errore durante l'invio. Riprova.");
         }
