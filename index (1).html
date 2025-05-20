@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script>document.documentElement.style.scrollBehavior = 'smooth';</script>
+  <link rel="preload" as="image" href="logo-header.jpeg">
+  <link rel="preload" as="image" href="foto.jpg">
+  <link rel="preload" as="image" href="ChatGPT Image 23 apr 2025, 10_55_57.png">
+  <link rel="preload" as="image" href="ChatGPT Image 23 apr 2025, 10_56_17.png">
+  <meta name="description" content="Martina Rocchetti, psicologa a Roma. Supporto psicologico per adulti, adolescenti e bambini, mindfulness e DSA. Prenota online o in studio.">
+  <meta name="keywords" content="psicologa Roma, supporto psicologico, mindfulness, DSA, psicoterapia, Martina Rocchetti">
+  <meta name="author" content="Martina Rocchetti">
+  <meta property="og:title" content="Martina Rocchetti - Psicologa a Roma">
+  <meta property="og:description" content="Supporto psicologico per adulti, adolescenti e bambini. Scopri il mio approccio e prenota un colloquio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.martinarocchetti.it">
+  <meta property="og:image" content="logo-header.jpeg">
+  <meta name="robots" content="index, follow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martina Rocchetti - Psicologa</title>
+  <link rel="icon" href="logo-header.jpeg" type="image/jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fffaf9;
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'DM Serif Display', serif;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.92);
+      min-height: 100vh;
+    }
+    .sticky-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ec4899;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 9999px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 50;
+      transition: background-color 0.3s;
+    }
+    .sticky-button:hover {
+      background-color: #db2777;
+    }
+    .quote-hero {
+      background: linear-gradient(to right, #fce7f3, #fdf2f8);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-style: italic;
+      color: #4b5563;
+    }
+      
+@keyframes bounce-up {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -6px); }
+}
+
+.animate-bounce-up {
+  animation: bounce-up 2s infinite;
+}
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll-x {
+      animation: scroll-x 40s linear infinite;
+    }
+  html.dark body {
+    background-color: #1f2937;
+    color: #e5e7eb;
+  }
+  html.dark .bg-white {
+    background-color: #2d3748;
+  }
+  html.dark .text-pink-800 {
+    color: #fbb6ce;
+  }
+  html.dark .text-gray-700, html.dark .text-gray-500, html.dark .text-gray-800 {
+    color: #d1d5db;
+  }
+  html.dark .bg-pink-50 {
+    background-color: #2a2f3a;
+  }
+  html.dark .bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #1f2937, #2a2f3a);
+  }
+  html.dark .shadow-md {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
+  }
+  
+</style>
+
+</head>
+<body class="text-gray-800">
+  <div class="overlay">
+
+    
+<div class="fixed bottom-6 left-6 z-50 md:absolute md:top-4 md:right-4">
+  <button onclick="document.documentElement.classList.toggle('dark')" class="text-xs font-medium bg-gray-200 dark:bg-gray-700 dark:text-white px-3 py-1 rounded-full shadow">Ψ</button>
+</div>
+      <div class="sticky top-0 z-50 bg-white dark:bg-gray-800 max-w-6xl mx-auto px-4 py-4 flex justify-between items-center shadow">
+        <div class="flex items-center space-x-2">
+          <img src="logo-header.jpeg" alt="Logo Martina Rocchetti" class="h-14 w-auto" loading="lazy">
+          <h1 class="text-xl font-bold text-pink-700">Dott.ssa Martina Rocchetti</h1>
+        </div>
+        <button class="md:hidden text-pink-700 focus:outline-none fixed top-4 right-4 z-50 bg-white p-2 rounded shadow" onclick="toggleMobileMenu()">☰</button>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium transition-all duration-300">
+  <a href="#chi-sono" class="hover:text-pink-600 hover:underline underline-offset-4">Chi sono</a>
+  <a href="#cosa-faccio" class="hover:text-pink-600 hover:underline underline-offset-4">Cosa faccio</a>
+  <a href="#come-aiuto" class="hover:text-pink-600 hover:underline underline-offset-4">Come posso aiutarti</a>
+  <a href="#approccio" class="hover:text-pink-600 hover:underline underline-offset-4">Approccio</a>
+  <a href="#articoli" class="hover:text-pink-600 hover:underline underline-offset-4">Blog</a>
+  <a href="#form-contatto" class="hover:text-pink-600 hover:underline underline-offset-4">Contatti</a>
+  <a href="#dove-ricevo" class="hover:text-pink-600 hover:underline underline-offset-4">Dove ricevo</a>
+</nav>
+      </div>
+      <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm transition-all duration-300 ease-in-out">
+  <a href="#chi-sono" class="block text-pink-700">Chi sono</a>
+  <a href="#cosa-faccio" class="block text-pink-700">Cosa faccio</a>
+  <a href="#come-aiuto" class="block text-pink-700">Come posso aiutarti</a>
+  <a href="#approccio" class="block text-pink-700">Approccio</a>
+  <a href="#articoli" class="block text-pink-700">Blog</a>
+  <a href="#form-contatto" class="block text-pink-700">Contatti</a>
+  <a href="#dove-ricevo" class="block text-pink-700">Dove ricevo</a>
+</nav>
+
+    <div class="quote-hero">
+  <blockquote class="max-w-xl mx-auto text-lg md:text-xl font-serif italic text-pink-700">
+    “Quando non si può più cambiare una situazione, non resta altro da fare che cambiare noi stessi.”
+  </blockquote>
+</div>
+
+    <div class="overlay">
+    <!-- Bottoni fissi in basso a destra -->
+<div class="fixed bottom-6 right-6 flex flex-col items-end space-y-3 z-50">
+  <a href="#form-contatto" class="bg-pink-600 text-white px-4 py-2 rounded-full shadow hover:bg-pink-700 transition">Contattami</a>
+  <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-full shadow hover:bg-pink-700 transition">↑ Torna su</a>
+</div>
+
+    <section id="chi-sono" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-start">
+  <div class="w-full md:w-1/3">
+    <img src="foto.jpg" alt="Martina Rocchetti" class="w-full aspect-square object-cover rounded-xl shadow" loading="lazy">
+  </div>
+  <div>
+    <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Chi sono</h2>
+    <p class="text-base leading-relaxed mb-4">
+      Mi chiamo <strong>Martina Rocchetti</strong> e sono una <strong>psicologa clinica</strong> iscritta all’<strong>Ordine degli Psicologi del Lazio</strong> con il n. 30441 e <strong>psicoterapeuta</strong> ad orientamento strategico integrato in formazione presso la <strong>scuola di specializzazione SCUPSIS di Roma</strong>. La mia passione per la psicologia nasce dal desiderio di supportare le persone nel loro percorso di crescita, aiutandole a superare difficoltà emotive e relazionali.
+    </p>
+    <p class="text-base leading-relaxed mb-4">
+      Ho avuto la fortuna di lavorare in contesti molto diversi, ognuno dei quali mi ha arricchita: dall’ambito ospedaliero a quello scolastico, dal sostegno ai bambini con disturbi dell’apprendimento a quello nei centri per tossicodipendenze, fino ai percorsi di mindfulness. Credo che ogni incontro sia un’opportunità di scambio e trasformazione.
+    </p>
+    <p class="text-base leading-relaxed">
+      Il mio obiettivo è <strong>offrire uno spazio sicuro, empatico e non giudicante</strong>, dove ognuno possa sentirsi libero di esprimersi e iniziare un percorso verso il benessere psicologico. Insieme, passo dopo passo, possiamo costruire il tuo cambiamento!
+    </p>
+  </div>
+</section>
+
+<section id="cosa-faccio" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center" data-animate>
+  <img src="Cosa-faccio.png" alt="Illustrazione Cosa faccio" class="w-full md:w-1/4 rounded-xl shadow">
+  <div>
+    <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Cosa faccio</h2>
+    <p class="text-base leading-relaxed mb-6">
+      Nel mio lavoro mi occupo di accompagnare le persone in <strong>momenti di cambiamento, confusione, difficoltà o crescita personale</strong>. Spesso non è facile chiedere aiuto, ma farlo può essere <strong>il primo passo per tornare a sentirsi meglio, più centrati e in contatto con sé</strong>.
+    </p>
+    <ul class="pl-0 space-y-4 text-base leading-relaxed list-none">
+      <li class="flex items-start gap-3"><span class="text-4xl">🧠</span> <span><strong>Supporto psicologico</strong> per adulti e adolescenti</span></li>
+      <li class="flex items-start gap-3"><span class="text-4xl">📚</span> <span><strong>Tutoraggio</strong> per bambini con DSA e ADHD</span></li>
+      <li class="flex items-start gap-3"><span class="text-4xl">🧘‍♀️</span> <span><strong>Incontri</strong> di mindfulness e bioenergetica</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="come-aiuto" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center" data-animate>
+  <img src="Come-posso-aiutarti.png" alt="Supporto emotivo" class="w-full md:w-1/4 rounded-xl shadow" loading="lazy">
+  <div>
+    <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Come posso aiutarti</h2>
+    <p class="text-base leading-relaxed mb-4">
+      Ci sono momenti in cui <strong>le emozioni si fanno confuse</strong>, i pensieri si affollano e non si riesce più a vedere con chiarezza la direzione da prendere. In questi momenti, <strong>avere uno spazio di ascolto, confronto e sostegno</strong> può fare la differenza.
+    </p>
+    <p class="text-base leading-relaxed mb-4"><strong>Mi occupo in particolare di:</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-base leading-relaxed">
+      <li><strong>Difficoltà emotive, relazionali e comportamentali</strong></li>
+      <li><strong>Gestione dell’ansia e attacchi di panico</strong></li>
+      <li><strong>Disturbi alimentari e dell’umore</strong></li>
+      <li><strong>Superamento di crisi e fasi di transizione</strong></li>
+      <li><strong>Lutti e separazioni</strong></li>
+      <li><strong>Potenziamento dell’autostima</strong></li>
+      <li><strong>Affrontare malattie difficili</strong></li>
+      <li><strong>Orientamento scolastico e professionale</strong></li>
+      <li><strong>Tecniche di respirazione e mindfulness</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section id="approccio" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center" data-animate>
+  <img src="Il-mio-approccio.png" alt="Approccio terapeutico" class="w-full md:w-1/4 rounded-xl shadow" loading="lazy">
+  <div>
+    <h2 class="text-3xl font-semibold text-pink-800 mb-4 leading-snug">Qual è il mio approccio</h2>
+    <p class="text-base leading-relaxed mb-4">
+      Ogni persona ha una <strong>storia unica</strong>, ed è proprio da lì che parto: <strong>dall’ascolto profondo</strong> di chi sei, di come ti senti e di ciò che stai vivendo. Il mio modo di lavorare è <strong>flessibile e accogliente</strong>, perché per attuare un cambiamento profondo è necessario <strong>creare un percorso su misura</strong>, adatto a ciò di cui hai davvero bisogno nel momento attuale, per questo ho sposato l’<strong>approccio strategico-integrato</strong>.
+    </p>
+    <p class="text-base leading-relaxed mb-4">
+      Questo approccio considera come gli individui si relazionano con se stessi, con gli altri e con il mondo. Mira subito a <strong>risolvere il problema presentato dal paziente</strong>, con un <strong>intervento breve e focale</strong>, e in seguito si lavora al <strong>consolidamento del nuovo equilibrio raggiunto</strong>. Il focus quindi è nel <strong>qui ed ora</strong>, per poi porre solo in seguito l’attenzione sulla genesi dei <strong>comportamenti disfunzionali</strong> che hanno portato a sviluppare una sintomatologia. 
+    </p>
+    <p class="text-base leading-relaxed">
+      Il mio compito è <strong>guidarti in un percorso di riscoperta</strong>, che possa aiutarti a <strong>prenderti cura di te</strong> e <strong>ritrovare il tuo spazio nel mondo</strong>.
+    </p>
+  </div>
+</section>
+
+<section id="recensioni" class="rounded-2xl shadow-md px-6 py-10 my-10 max-w-6xl mx-auto text-center" data-animate>
+  <h2 class="text-3xl font-semibold text-pink-800 mb-6">Recensioni</h2>
+  <div class="text-center mb-8">
+    <a href="https://www.miodottore.it/martina-rocchetti/psicologo/roma" target="_blank" class="inline-block text-pink-600 font-semibold underline hover:text-pink-800 transition">Il mio profilo su MioDottore</a>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6 text-left">
+    <!-- Box 1 -->
+    <div class="bg-pink-50 p-6 rounded-xl shadow-md border border-pink-100 overflow-hidden">
+      <div class="flex space-x-6 scroll-recensioni overflow-x-auto scroll-smooth snap-x snap-mandatory">
+        <div class="min-w-full snap-start">
+          <p class="text-lg italic text-gray-700 mb-4">“Consiglio vivamente la dottoressa Rocchetti, mi sono trovata benissimo! È stata molto professionale e mi sono sentita subito capita, grazie!”</p>
+          <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+        </div>
+        <div class="min-w-full snap-start">
+          <p class="text-lg italic text-gray-700 mb-4">“Dottoressa giovane ma molto preparata e professionale. Ho iniziato da poco il mio percorso con lei ma già sto riscontrando i primi benefici. Ve la consiglio vivamente.”</p>
+          <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+        </div>
+      </div>
+    </div>
+    <!-- Box 2 -->
+    <div class="bg-pink-50 p-6 rounded-xl shadow-md border border-pink-100 overflow-hidden">
+     <div class="flex space-x-6 scroll-recensioni overflow-x-auto scroll-smooth snap-x snap-mandatory">
+        <div class="min-w-full snap-start">
+          <p class="text-lg italic text-gray-700 mb-4">“Mio figlio si sta trovando benissimo con la dottoressa, è una persona molto competente, disponibile, gentile ed empatica.”</p>
+          <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+        </div>
+        <div class="min-w-full snap-start">
+          <p class="text-lg italic text-gray-700 mb-4">“Psicologa trovata tramite il passaparola, mi sono sentita subito a mio agio e ho apprezzato in particolare l'attenzione che presta durante i colloqui. La consiglierei senz'altro.”</p>
+          <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+        </div>
+      </div>
+    </div>
+    <!-- Box 3 -->
+    <div class="bg-pink-50 p-6 rounded-xl shadow-md border border-pink-100 overflow-hidden">
+      <div class="flex space-x-6 scroll-recensioni overflow-x-auto scroll-smooth snap-x snap-mandatory">
+        <div class="min-w-full snap-start">
+          <p class="text-lg italic text-gray-700 mb-4">“Dottoressa consigliata da un'amica, mi sono trovato molto bene. Attenta e disponibile.”</p>
+          <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+        </div>
+        <div class="min-w-full snap-start">
+          <p class="text-lg italic text-gray-700 mb-4">“Non è facile aprirsi con qualcuno, ma lei è riuscita a creare uno spazio sicuro dove posso esprimermi liberamente.”</p>
+          <p class="text-sm text-right text-pink-600 font-medium">— Recensione da MioDottore</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="dove-ricevo" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-4xl mx-auto text-left" data-animate>
+  <h2 class="text-2xl font-semibold text-pink-800 mb-6">Dove puoi trovarmi</h2>
+  <p class="text-base leading-relaxed mb-4">
+    Ricevo a Roma in tre studi accoglienti, tutti in zona Tuscolana e facilmente raggiungibili con la metro A:
+  </p>
+ <ul class="space-y-4 text-base leading-relaxed">
+  <li><strong>🏠 Studio Beyond – <span class="no-underline text-inherit">Via Vestricio Spurinna 147, Roma</span></strong><br>📍 Zona Numidio Quadrato – Metro A</li>
+  <li><strong>🏢 Studio AB – <span class="no-underline text-inherit">Via Sestio Calvino 141, Roma</span></strong><br>📍 Zona Subaugusta – Metro A</li>
+  <li><strong>🏥 Studio Medico Dott. Cicala – <span class="no-underline text-inherit">Via Tuscolana 922, Roma</span></strong><br>📍 Zona Numidio Quadrato – Metro A</li>
+</ul>
+  <div class="mt-8 space-y-6">
+    <iframe class="w-full h-64 rounded-xl shadow-md" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.3904987337815!2d12.570512315314003!3d41.85860317922107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61f3a3e55f47%3A0x48adf7f12ea2ad7!2sVia%20Vestricio%20Spurinna%2C%20147%2C%2000181%20Roma%20RM!5e0!3m2!1sit!2sit!4v1713980100000!5m2!1sit!2sit"></iframe>
+    <iframe class="w-full h-64 rounded-xl shadow-md" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.332408259586!2d12.570017075638707!3d41.85993087124717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61f4f87940b1%3A0xe91cfd229cdbfb35!2sVia%20Sestio%20Calvino%2C%20141%2C%2000181%20Roma%20RM!5e0!3m2!1sit!2sit!4v1713882220000!5m2!1sit!2sit"></iframe>
+    <iframe class="w-full h-64 rounded-xl shadow-md" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.1902037419146!2d12.569979915314043!3d41.86280747922056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61f7e9dfffb3%3A0x5e0e0dfe5d8c19df!2sVia%20Tuscolana%2C%20922%2C%2000181%20Roma%20RM!5e0!3m2!1sit!2sit!4v1714062481737!5m2!1sit!2sit"></iframe>
+  </div>
+  <p class="mt-6 text-base leading-relaxed">💻 Disponibili anche incontri online</p>
+</section>
+<section id="form-contatto" class="bg-pink-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-3xl mx-auto" data-animate>
+  <h2 class="text-2xl font-semibold text-pink-800 mb-6 text-center">Scrivimi un messaggio</h2>
+  <form id="contatto-form" class="space-y-4" action="https://formspree.io/f/xanoylen" method="POST">
+    <div>
+      <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+      <input type="text" id="nome" name="nome" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+    </div>
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+    </div>
+    <div>
+      <label for="messaggio" class="block text-sm font-medium text-gray-700">Messaggio</label>
+      <textarea id="messaggio" name="messaggio" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"></textarea>
+      <input type="hidden" name="_subject" value="Nuovo messaggio dal sito di Martina Rocchetti">
+    </div>
+    <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded-full shadow hover:bg-pink-700">Invia</button>
+  </form>
+  <div class="text-center mt-6">
+    <a href="https://www.miodottore.it/martina-rocchetti/psicologo/roma" target="_blank" class="inline-block text-pink-600 font-semibold underline hover:text-pink-800 transition">Prenota una visita su MioDottore</a>
+  </div>
+</section>
+
+<section id="articoli" class="max-w-4xl mx-auto px-4 py-10 bg-white dark:bg-gray-800 text-left" data-animate>
+  <h2 class="text-2xl font-semibold text-pink-800 mb-6">I miei articoli</h2>
+  <p class="text-base leading-relaxed mb-4">
+    In questa sezione troverai riflessioni e studi che voglio condividere su temi che mi stanno a cuore e argomenti che possano stimolare curiosità e interesse.
+  </p>
+</section>
+<section id="form-success" class="bg-green-50 rounded-2xl shadow-md px-6 py-10 my-10 max-w-3xl mx-auto hidden">
+  <div class="text-center">
+    <svg class="w-12 h-12 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <h2 class="text-xl font-semibold text-green-700 mb-2">Grazie per il tuo messaggio!</h2>
+    <p class="text-base text-gray-700">Ti risponderò il prima possibile.</p>
+    <a href="#" class="mt-4 inline-block text-pink-600 hover:underline">Torna alla home</a>
+  </div>
+</section>
+
+
+<footer class="text-center text-sm text-gray-500 py-8 border-t bg-white bg-opacity-80 flex flex-col items-center space-y-2">
+  <img src="logo-header.jpeg" alt="Logo Martina Rocchetti" class="h-10 w-auto mb-2">
+      <a href="https://chrys19.github.io/Sito-Martina-5/privacy-policy.html" class="text-pink-600 hover:text-pink-800 underline transition">© 2025 Martina Rocchetti · Psicologa · Tutti i diritti riservati</a>
+    
+</footer>
+  </div>
+  <script>
+function closeMobileMenuOnLinkClick() {
+  const links = document.querySelectorAll('#mobile-menu a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.add('hidden');
+      menu.classList.remove('block');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
+    </script>
+    
+<script>
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  if (menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+    menu.classList.add('fixed', 'top-[72px]', 'left-0', 'w-full', 'bg-white', 'z-40', 'px-4', 'pb-4');
+    menu.style.opacity = '1';
+    document.body.style.overflow = 'hidden';
+  } else {
+    menu.style.opacity = '0';
+    setTimeout(() => {
+      menu.classList.add('hidden');
+      menu.classList.remove('fixed', 'top-[72px]', 'left-0', 'w-full', 'bg-white', 'z-40', 'px-4', 'pb-4');
+    }, 300);
+    document.body.style.overflow = '';
+  }
+}
+</script>
+    <script>
+const scrollers = document.querySelectorAll(".scroll-recensioni");
+scrollers.forEach((scroller, index) => {
+  let forward = true;
+  setTimeout(() => {
+    setInterval(() => {
+      scroller.scrollTo({
+        left: forward ? scroller.scrollWidth : 0,
+        behavior: "smooth"
+      });
+      forward = !forward;
+    }, 5000 + index * 1000); // ogni box inizia in momenti sfalsati
+  }, index * 3000);
+});
+</script>
+    <script>
+       document.addEventListener("DOMContentLoaded", () => {
+  // ...altre funzioni...
+  closeMobileMenuOnLinkClick(); // << questa chiamata è fondamentale
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contatto-form");
+  const success = document.getElementById("form-success");
+
+  if (form) {
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const button = form.querySelector("button[type='submit']");
+      button.disabled = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.classList.add("hidden");
+          success.classList.remove("hidden");
+          form.reset();
+        } else {
+          alert("Si è verificato un errore durante l'invio. Riprova.");
+        }
+      } catch (error) {
+        console.error("Errore durante l'invio del modulo:", error);
+        alert("Errore di connessione. Riprova più tardi.");
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>
